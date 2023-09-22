@@ -26,6 +26,8 @@ Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tpope/vim-commentary'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'nvim-lua/plenary.nvim'
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -34,6 +36,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let g:NERDTreeWinPos = "left"
 let g:python3_host_prog = '/home/gabrielarrienfernandes/.asdf/shims/python'
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
